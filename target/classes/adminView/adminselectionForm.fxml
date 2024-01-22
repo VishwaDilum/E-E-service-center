@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="122.0" prefWidth="306.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.userController.SelectionFormController">
+   <children>
+      <JFXButton layoutX="24.0" layoutY="36.0" onAction="#electronicOnAction" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #b8b8b8;" text="Electronic Item">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="153.0" layoutY="36.0" onAction="#electricalOnAction" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #b8b8b8;" text="Electrical Item">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="618.0" prefWidth="1064.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.adminController.OrderFormController">
+   <children>
+      <TableView fx:id="orderTable" layoutX="33.0" layoutY="139.0" prefHeight="368.0" prefWidth="1008.0">
+        <columns>
+          <TableColumn fx:id="colOrder_ID" prefWidth="151.0" text="Order ID" />
+            <TableColumn fx:id="colCustName" prefWidth="144.0" text="Customer Name" />
+            <TableColumn fx:id="colContactNum" prefWidth="151.0" text="Contact Number" />
+            <TableColumn fx:id="colEmail" prefWidth="159.0" text="Email Address" />
+            <TableColumn fx:id="colOrderDesc" prefWidth="161.0" text="Order Description" />
+            <TableColumn fx:id="colStatus" prefWidth="132.0" text="Status" />
+            <TableColumn fx:id="colBtn" prefWidth="109.0" text="Button" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtPartofname" layoutX="33.0" layoutY="56.0" prefHeight="25.0" prefWidth="184.0" promptText="Part of Name" />
+      <JFXTextField fx:id="txtPartofPrice" layoutX="236.0" layoutY="56.0" prefHeight="25.0" prefWidth="184.0" promptText="Part of price" />
+      <JFXButton layoutX="958.0" layoutY="28.0" onAction="#refreshOnAction" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #4d4b4c;" text="Refresh" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="774.0" layoutY="556.0" onAction="#addpartOnAction" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #7f7c7d;" text="Add Part" textFill="#fff3f3">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="921.0" layoutY="556.0" onAction="#updateOnAction" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #7f7c7d;" text="Update Status" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="comStatus" layoutX="796.0" layoutY="28.0" prefHeight="25.0" prefWidth="120.0" />
+      <Label fx:id="labelOrder" layoutX="33.0" layoutY="12.0" prefHeight="25.0" prefWidth="80.0" />
+      <JFXButton ellipsisString="" layoutX="13.0" layoutY="20.0" onAction="#backOnAction" prefHeight="34.0" prefWidth="28.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/bck.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane" prefHeight="577.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.adminController.PieChartController">
+   <children>
+      <PieChart fx:id="pieChart" layoutX="132.0" layoutY="77.0" />
+      <JFXButton layoutX="716.0" layoutY="77.0" onAction="#dailyOnAction" prefHeight="31.0" prefWidth="114.0" text="Daily Reports" />
+      <JFXButton layoutX="716.0" layoutY="139.0" onAction="#monthlyOnAction" prefHeight="31.0" prefWidth="114.0" text="Monthly Reports" />
+      <JFXButton layoutX="716.0" layoutY="191.0" onAction="#annualyOnAction" prefHeight="31.0" prefWidth="114.0" text="Annualy Reports" />
+      <JFXButton layoutX="716.0" layoutY="446.0" onAction="#lineChartOnAction" prefHeight="31.0" prefWidth="114.0" text="View Line Chart" />
+      <JFXButton ellipsisString="" layoutX="24.0" layoutY="24.0" onAction="#backOnAction" prefHeight="34.0" prefWidth="28.0" text="Button">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/bck.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

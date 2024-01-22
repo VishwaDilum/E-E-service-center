@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="618.0" prefWidth="1078.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.adminController.adminDashboardController">
+   <children>
+      <JFXTextField fx:id="txtCustCod" layoutX="38.0" layoutY="76.0" prefHeight="25.0" prefWidth="136.0" promptText="Customer Name" />
+      <JFXTextField fx:id="txtCustEmail" layoutX="198.0" layoutY="76.0" prefHeight="25.0" prefWidth="144.0" promptText="Email" />
+      <JFXComboBox fx:id="comCategory" layoutX="375.0" layoutY="76.0" prefHeight="25.0" prefWidth="144.0" promptText="Select Category" />
+      <JFXTextField fx:id="custNumber" layoutX="700.0" layoutY="76.0" prefHeight="25.0" prefWidth="127.0" promptText="Contact Number" />
+      <JFXTextArea fx:id="custDescription" layoutX="850.0" layoutY="73.0" prefHeight="31.0" prefWidth="166.0" promptText="Description" AnchorPane.bottomAnchor="514.0" />
+      <Label fx:id="labelOrderID" layoutX="957.0" layoutY="14.0" prefHeight="31.0" prefWidth="88.0" text="Order ID" />
+      <JFXButton layoutX="38.0" layoutY="200.0" onAction="#customerReportOnAction" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #a3a4a4;" text="Customer Report">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="38.0" layoutY="265.0" onAction="#orderReportOnAction" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #a3a4a4;" text="Order Report">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="38.0" layoutY="330.0" onAction="#salesReportOnAction" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #a3a4a4;" text="Sales Report">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="850.0" layoutY="466.0" onAction="#placeOrderOnAction" prefHeight="47.0" prefWidth="136.0" style="-fx-background-color: #36454F;" text="Place Order" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></JFXButton>
+      <JFXButton layoutX="405.0" layoutY="498.0" onAction="#registerUserOnAction" prefHeight="31.0" prefWidth="144.0" style="-fx-background-color: #a3a4a4;" text="Register New User">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtRegPaasowrd" layoutX="214.0" layoutY="501.0" prefHeight="25.0" prefWidth="136.0" promptText="Password" />
+      <JFXTextField fx:id="txtRegEmail" layoutX="38.0" layoutY="501.0" prefHeight="25.0" prefWidth="136.0" promptText="Email" />
+      <JFXComboBox fx:id="comItem" layoutX="530.0" layoutY="76.0" prefHeight="25.0" prefWidth="144.0" promptText="Select Item" />
+      <TableView fx:id="customerTable" layoutX="350.0" layoutY="199.0" prefHeight="263.0" prefWidth="136.0">
+        <columns>
+          <TableColumn fx:id="colCustomer" prefWidth="135.0" text="Customer" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtSearchOrderReport" layoutX="180.0" layoutY="266.0" prefHeight="29.0" prefWidth="139.0" promptText="Enter Order" />
+      <JFXButton layoutX="872.0" layoutY="200.0" onAction="#viewOrdersOnAction" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #4c4d4c;" text="View Orders" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="872.0" layoutY="251.0" onAction="#viewItemOnAction" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #4c4d4c;" text="View Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
